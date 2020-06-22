@@ -10,7 +10,7 @@ public class Main {
         // реализуйте алгоритм здесь
         UserServiceImpl userService = new UserServiceImpl();
 
-        userService.createUsersTable();
+//        userService.createUsersTable();
         userService.saveUser("test", "test", (byte) 12);
         System.out.println("User с именем – " + "test" + " добавлен в базу данных");
         userService.saveUser("test1", "test1", (byte) 22);
@@ -24,9 +24,9 @@ public class Main {
         for (User u : list) {
             System.out.println(u.toString());
         }
-
+//
         userService.cleanUsersTable();
         userService.dropUsersTable();
-//        userService.dropUsersTable();
+        userService.dropUsersTable();
     }
 }
