@@ -42,7 +42,7 @@ public class Util {
         configuration.setProperty("hibernate.connection.username", "root");
         configuration.setProperty("hibernate.connection.password", "12345678");
         configuration.setProperty("hibernate.show_sql", "true");
-        configuration.setProperty("hibernate.hbm2ddl.auto", "update");
+//        configuration.setProperty("hibernate.hbm2ddl.auto", "update");
         return configuration;
     }
 
